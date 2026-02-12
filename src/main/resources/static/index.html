@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OTP Authentication</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>OTP Authentication</h1>
+    <div id="step1">
+      <h2>Request OTP</h2>
+      <div class="field">
+        <label>Channel</label>
+        <select id="channel">
+          <option value="email">Email</option>
+          <option value="sms">Phone (SMS)</option>
+        </select>
+      </div>
+      <div class="field">
+        <label id="identifierLabel">Email address</label>
+        <input type="text" id="identifier" placeholder="you@example.com">
+      </div>
+      <button id="requestBtn">Send OTP</button>
+      <div id="requestMsg" class="msg"></div>
+    </div>
+
+    <div id="step2" class="hidden">
+      <h2>Verify OTP</h2>
+      <div class="field">
+        <label>Enter code</label>
+        <input type="text" id="code" placeholder="6-digit code">
+      </div>
+      <button id="verifyBtn">Verify</button>
+      <div id="verifyMsg" class="msg"></div>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
