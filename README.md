@@ -30,7 +30,10 @@ Spring Boot application providing OTP-based authentication via Email or Phone (S
 4. Open: `http://localhost:8080` (or your chosen port)
 
 ## Environment Variables
-
+- Database: `MYSQL_URL`, `MYSQL_USER`, `MYSQL_PASSWORD`
+- Email: `MAIL_HOST`, `MAIL_PORT`, `MAIL_USERNAME`, `MAIL_PASSWORD`, `otp.mail.from`
+- SMS: `otp.sms.enabled`, `otp.sms.provider` (`twilio` or `log`), `otp.sms.from`, `otp.twilio.accountSid`, `otp.twilio.authToken`
+- General: `SPRING_PROFILES_ACTIVE`
 
 
 ## Deployment
