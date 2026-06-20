@@ -16,9 +16,7 @@ Spring Boot application providing OTP-based authentication via Email or Phone (S
 
 ## Tech Stack
 
-- Java 17, Spring Boot 3
-- Spring Web, Spring Data JPA, Spring Mail
-- H2 (dev) and MySQL (prod-like)
+
 
 ## Run Locally
 
