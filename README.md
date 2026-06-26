@@ -7,11 +7,7 @@ Spring Boot application providing OTP-based authentication via Email or Phone (S
 🔗 https://otp-authentication-system-production-9678.up.railway.app
 
 ## Features
-- Request and verify OTP via REST API
-- Email and SMS channels (pluggable providers)
-- Rate limiting and TTL for OTPs
-- Profiles: `dev` (H2) and `mysql` (MySQL)
-- Static frontend served from `/` for quick testing
+
 
 
 ## Tech Stack
