@@ -21,7 +21,12 @@ Spring Boot application providing OTP-based authentication via Email or Phone (S
 
 
 ## Run Locally
-
+1. Build: `mvn -q -DskipTests package`
+2. Dev profile (H2): `java -jar target/otp-auth-0.0.1-SNAPSHOT.jar --spring.profiles.active=dev`
+3. MySQL profile:
+   - Set env vars: `MYSQL_URL`, `MYSQL_USER`, `MYSQL_PASSWORD`
+   - Run: `java -jar target/otp-auth-0.0.1-SNAPSHOT.jar --spring.profiles.active=mysql`
+4. Open: `http://localhost:8080` (or your chosen port)
 
 
 ## Environment Variables
